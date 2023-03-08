@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BreakdownDBContext>(options =>
-   options.UseSqlServer(builder.Configuration.GetConnectionString("BreakdownDbContext")));
+   options.UseSqlServer(builder.Configuration.GetConnectionString("BreakdownDbContext"))); 
 
 var app = builder.Build();
 
